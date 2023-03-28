@@ -1,0 +1,17 @@
+dependencias utilizadas::
+npm install -D jest ts-jest @types/jest
+
+criação de arquivo "jest.config.js":
+npx ts-jest config:init
+
+Test unit: Pode ser feito de várias formas, são elas:
+- criar um arquivo dentro da pasta onde o arquivo a ser testado está;
+    ex: src/models/User.test.ts (para testar o User)
+
+- criar uma pasta com o arquivo test dentro da pasta onde o arquivo a ser testado está;
+    ex1: src/Models/test/User.ts 
+    ex2: src/Models/__test__/User.ts 
+
+- criar uma pasta 'test' separada onde cada teste importará o arquivo a ser testado;
+    ex1: src/tests/user.model.test.ts
+    ex2: src/tests/user.model.unit.test.ts (para especificar o tipo de teste)
